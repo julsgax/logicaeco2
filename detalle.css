@@ -1,0 +1,137 @@
+
+
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 20px 0 30px 0;
+    display: flex;
+    align-items: center;
+    background: url(../img/Fondo_Color.PNG) top center no-repeat;
+    background-size: cover;
+  }
+
+  .hero h1 {
+    margin: 2;
+    color: #ffffff;;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 56px;
+  }
+  
+  .hero p {
+    color: #ffffff;;
+    margin: 2px 0 30px 0;
+    font-size: 15px;
+    font-weight: 400;
+   
+  }
+  
+  @media (max-width: 640px) {
+    #imagen1 {
+      width: 460px !important;
+    }
+    
+    .hero-img {
+      width: 100vw !important
+     
+    }
+    
+    .hero h1 {
+      -webkit-text-stroke-width: 1;
+      -webkit-text-stroke-color: #000;
+     
+      font-size: 35px;
+      
+      font-weight: 700;
+      line-height: 40px; /* 87.5% */
+    }
+  
+    .hero p {
+      font-size: 15px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+
+.feature-box img {
+max-width: 80px;
+}
+  .alt-features .icon-box {
+    display: flex;
+  }
+
+  .features .img-fluid {
+    max-width: 90%;
+    height: auto;
+    margin: 0 0 0px 0;
+}
+  
+  .alt-features .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+  }
+  
+  .alt-features .icon-box i {
+    font-size: 44px;
+    line-height: 44px;
+    color: var(--accent-color);
+    margin-right: 15px;
+  }
+  
+  .alt-features .icon-box p {
+    font-size: 15px;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+    margin-bottom: 0;
+  }
+  
+/*--------------------------------------------------------------
+# Features QUE VEREMOS EN EL CURSO Section
+--------------------------------------------------------------*/
+
+.features {
+    background-image: url(../img/Fondo\ data\ del\ curso.jpg);
+  }
+  .features .feature-box {
+    padding: 80px 10px;
+    box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    height: 100%;
+  }
+  
+
+  .features .feature-box h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .features .feature-box i {
+    background: color-mix(in srgb, var(--accent-color), transparent 92%);
+    color: var(--accent-color);
+    line-height: 0;
+    padding: 4px;
+    margin-right: 10px;
+    font-size: 24px;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  
+  .features .feature-box:hover i {
+    background: var(--accent-color);
+    color: var(--contrast-color);
+  }
+ 
