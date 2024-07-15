@@ -711,6 +711,7 @@ h6 {
   margin-bottom: 5px;
 }
 
+
 .footer .copyright {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -885,14 +886,15 @@ section,
   margin: 0;
   font-size: 70px;
   font-weight: 700;
-  line-height: 56px;
+  line-height: 53px;
 }
 
 .hero p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
-  margin: 5px 0 30px 0;
+  margin: 2px 0 30px 0;
   font-size: 20px;
   font-weight: 400;
+  line-height: 20px;
 }
 
 .hero .btn-get-started {
@@ -956,25 +958,25 @@ section,
 
 @media (max-width: 640px) {
   #imagen1 {
-    width: 400px !important;
+    width: 460px !important;
   }
   
   .hero-img {
-    width: 100vw !important;
+    width: 100vw !important
   }
   
   .hero h1 {
     -webkit-text-stroke-width: 1;
     -webkit-text-stroke-color: #000;
    
-    font-size: 64px;
+    font-size: 40px;
     
-    font-weight: 400;
-    line-height: 56px; /* 87.5% */
+    font-weight: 700;
+    line-height: 40px; /* 87.5% */
   }
 
   .hero p {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     margin-bottom: 30px;
   }
@@ -1052,7 +1054,7 @@ section,
 # QUE ES LA MODA SUSTENTABLE Section
 --------------------------------------------------------------*/
 .values {
-  background-image: url(../img/Fondo_Genérico.PNG)
+  background-image: url(../img/Fondo_Generico.PNG)
 }
 .values .card {
   background-color: var(--surface-color);
@@ -1089,7 +1091,7 @@ section,
 # DATOS RANDOM Section
 --------------------------------------------------------------*/
 .stats {
-  background-image: url(../img/Fondo_Genérico.PNG);
+  background-image: url(../img/Fondo_Generico.PNG);
 }
 .stats-item img {
   max-width: 100px;
@@ -1356,21 +1358,26 @@ section,
 }
 .pricing .pricing-tem {
   background-color: var(--surface-color);
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 5);
+  width: 305px;
+  box-shadow:  0px 0 30px rgba(0, 0, 0, 0.2);
   padding: 50px 30px;
   text-align: center;
   border-radius: 4px;
-  position: relative;
+  position: center;
   overflow: hidden;
   transition: 0.3s;
   height: 100%;
 }
 
 @media (min-width: 1200px) {
-  .pricing .pricing-tem:hover {
+ 
+   .pricing .pricing-tem:hover {
+    align-items: 20px;
     transform: scale(1.1);
     box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+    
   }
+  
 }
 
 .pricing h3 {
@@ -1461,7 +1468,7 @@ section,
 # Faq Section
 --------------------------------------------------------------*/
 .faq { 
-  background-image: url(../img/Fondo_Genérico.PNG);
+  background-image: url(../img/Fondo_Generico.PNG);
   }
 .faq .faq-container .faq-item {
   position: relative;
@@ -1543,7 +1550,11 @@ section,
 .portfolio {
   background-image: url(../img/Fondo_Color.PNG);
 }
+.portfolio .section-title p {
+  color: #ffffff;
+}
 .portfolio .portfolio-filters {
+  color: #ffffff;
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
@@ -1753,10 +1764,10 @@ section,
 # Team Section
 --------------------------------------------------------------*/
 .team {
-  background-image: url(../img/Fondo_Genérico.PNG);
+  background-image: url(../img/Fondo_Generico.PNG);
 }
 .team .team-member {
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+ 
   overflow: hidden;
   text-align: center;
   border-radius: 5px;
@@ -1766,6 +1777,8 @@ section,
 .team .team-member .member-img {
   position: relative;
   overflow: hidden;
+  align-items: center;
+
 }
 
 .team .team-member .member-img:after {
@@ -1774,13 +1787,7 @@ section,
   left: -1px;
   right: -1px;
   bottom: -1px;
-  height: 100%;
-  background-color: var(--surface-color);
-  -webkit-mask: url("../img/team-shape.svg") no-repeat center bottom;
-  mask: url("../img/team-shape.svg") no-repeat center bottom;
-  -webkit-mask-size: contain;
-  mask-size: contain;
-  z-index: 1;
+
 }
 
 .team .team-member .social {
@@ -1838,7 +1845,7 @@ section,
 
 .team .team-member:hover {
   transform: scale(1.08);
-  box-shadow: 0px 0 30px rgba(0, 0, 0, 0.1);
+  
 }
 
 .team .team-member:hover .social {
@@ -1850,7 +1857,7 @@ section,
 # Clients Section
 --------------------------------------------------------------*/
 .clients {
-  background-image: url(../img/fondo\ jean.PNG);
+  background-image: url(../img/Fondo_Generico.PNG);
 }
 .clients .swiper-slide img {
   transition: 0.3s;
@@ -1960,31 +1967,43 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+
+
 .contact {
   background-image: url(../img/fondofooter.PNG)
 }
+.contact .section-title P {
+  color: #ffffff;
+} 
 .contact .info-item {
   background: color-mix(in srgb, var(--default-color), transparent 96%);
   padding: 30px;
+  text-align: center
+}
+
+.contact .info-item img {
+  max-width: 70px;
 }
 
 .contact .info-item i {
   font-size: 38px;
   line-height: 0;
-  color: var(--accent-color);
+  color: #ffffff
 }
 
 .contact .info-item h3 {
   font-size: 20px;
   font-weight: 700;
-  margin: 20px 0 10px 0;
+  margin: 10px 0 5px 0;
+  color: #ffffff;
 }
 
 .contact .info-item p {
-  padding: 0;
-  line-height: 24px;
-  font-size: 14px;
+  padding: 30;
+  line-height: 16px;
+  font-size: 12px;
   margin-bottom: 0;
+  color: #ffffff;
 }
 
 .contact .php-email-form {
